@@ -28,6 +28,7 @@ var sum = function(num1, num2) {
   return num1+num2;
 };
 
+console.log('SUM 1,2: ' + sum(1,2));
 
 
 // Q2
@@ -38,6 +39,7 @@ var avg = function(num1, num2, num3) {
   return avgSum/3;
 };
 
+console.log('Avg 2,3,8: ' + avg(2,3,8));
 
 
 // Q3
@@ -47,6 +49,7 @@ var getLength = function(str) {
   return str.length;
 };
 
+console.log('Length of TEST: ' + getLength('TEST'));
 
 
 // Q4
@@ -62,7 +65,7 @@ var greaterThan = function(num1, num2) {
   }
 };
 
-
+console.log('2 greater than 1 ' + greaterThan(1,2));
 
 // Q5
 // Write a function called `greet` that takes a
@@ -72,6 +75,8 @@ var greaterThan = function(num1, num2) {
 var greet = function(name) {
   return 'Hello, ' + name + '!';
 };
+
+console.log(greet('Jess'));
 
 
 
@@ -89,7 +94,7 @@ var madLib = function(word1, word2, word3, word4) {
   return " quick " + word1 + ' ' + word2 + ' ' + word3 + ' over the ' + word4;
 };
 
-
+console.log("madLib, brown, fox, jumps, fence" + madLib('brown', 'fox', 'jumps', 'fence'));
 
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
