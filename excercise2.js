@@ -1,3 +1,6 @@
+console.log('\n\n\n\n\n');
+console.log('=== Excercise 2 ===');
+
 // ---------------------
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
 // ---------------------

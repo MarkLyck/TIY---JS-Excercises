@@ -15,6 +15,7 @@ var instructors = [
 ];
 
 
+console.log('\n\n\n\n\n');
 console.log('=== ARRAYS ===');
 // ---------------------------
 // 1. Find largest number
