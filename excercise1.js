@@ -94,7 +94,7 @@ var madLib = function(word1, word2, word3, word4) {
   return " quick " + word1 + ' ' + word2 + ' ' + word3 + ' over the ' + word4;
 };
 
-console.log("madLib, brown, fox, jumps, fence" + madLib('brown', 'fox', 'jumps', 'fence'));
+console.log("madLib, brown, fox, jumps, fence: " + madLib('brown', 'fox', 'jumps', 'fence'));
 
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
