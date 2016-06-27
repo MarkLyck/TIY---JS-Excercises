@@ -50,7 +50,6 @@ console.log('isVowel b: ' + max('b'));
 function rovarspraket(phrase) {
     var newString = '';
     for (var i = 0, len = phrase.length; i < len; i++) {
-      console.log(phrase.split('')[i]);
       var char = phrase.split('')[i];
       if (!isVowel(char)) {
         newString += char + 'o' + char;
