@@ -27,8 +27,8 @@ console.log('=== Excercise 1 ===');
 var sum = function(num1, num2) {
   return num1+num2;
 };
-
-console.log('SUM 1,2: ' + sum(1,2));
+console.assert(sum(1,2) === 3, 'sum expected: 3');
+console.assert(sum(1,4) === 3, 'sum expected: 5');
 
 
 // Q2
@@ -39,7 +39,8 @@ var avg = function(num1, num2, num3) {
   return avgSum/3;
 };
 
-console.log('Avg 2,3,8: ' + avg(2,3,8));
+console.assert(avg(2,4,0) === 2, 'avg expected: 2');
+console.assert(avg(2,4,0) === 4, 'avg expected: 3');
 
 
 // Q3
@@ -49,7 +50,8 @@ var getLength = function(str) {
   return str.length;
 };
 
-console.log('Length of TEST: ' + getLength('TEST'));
+console.assert(getLength('test') === 4, 'getLength expected: 4');
+console.assert(getLength(['test']) === 4, 'getLength expected: a String');
 
 
 // Q4
@@ -64,8 +66,8 @@ var greaterThan = function(num1, num2) {
     return false;
   }
 };
-
-console.log('2 greater than 1 ' + greaterThan(1,2));
+console.assert(greaterThan(1,2) === true, 'getLength expected: 4');
+console.assert(greaterThan('blah', 2) === true, '2 is not greater than Blah');
 
 // Q5
 // Write a function called `greet` that takes a
@@ -75,8 +77,8 @@ console.log('2 greater than 1 ' + greaterThan(1,2));
 var greet = function(name) {
   return 'Hello, ' + name + '!';
 };
-
-console.log(greet('Jess'));
+console.assert(greet('Jess') === 'Hello, Jess!');
+console.assert(greet([]) === 'Hello, Array!', 'greet: Expecting a String');
 
 
 
@@ -91,10 +93,10 @@ console.log(greet('Jess'));
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 var madLib = function(word1, word2, word3, word4) {
-  return " quick " + word1 + ' ' + word2 + ' ' + word3 + ' over the ' + word4;
+  return "quick " + word1 + ' ' + word2 + ' ' + word3 + ' over the ' + word4;
 };
-
-console.log("madLib, brown, fox, jumps, fence: " + madLib('brown', 'fox', 'jumps', 'fence'));
+console.assert(madLib('brown', 'fox', 'jumps', 'fence') === 'quick brown fox jumps over the fence');
+console.assert(madLib('brown', 'fox', 'jumps', 'black', 'fence') === 'quick black fox jumps over the brown fox', 'madLib: failed');
 
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
